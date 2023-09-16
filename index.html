@@ -231,6 +231,93 @@
                     </ul>
                 </div>
                 <input name="passive-perception" type="number">
+                <div id="otherprofs">
+                    <textarea name="otherprofs">Other Proficiencies and Languages</textarea>
+                </div>
+            </section>
+
+            <section class="combat" id="combat">
+                <div class="armorclass" name="armorclass">
+                    <label for="armorclass">AC</label>
+                    <input name="armorclass" id="armorclass" type="number">
+                </div>
+                <div class="initiative" id="initiative">
+                    <label for="initiative">Initiative</label>
+                    <input name="initiative" id="initiative" type="number">
+                </div>
+                <div class="hp" id="hp">
+                    <div class="regular" id="regular">
+                        <label for="hp">HP</label>
+                        <div class="max" id="max">
+                            <label for="maxhp">Max</label>
+                            <input name="maxhp" id="maxhp" type="number">
+                        </div>
+                        <div class="current" id="current">
+                            <label for="currenthp">Current</label>
+                            <input name="currenthp" id="currenthp" type="number">
+                        </div>
+                        <div class="temp" id="temp">
+                            <label for="temphp">Temp</label>
+                            <input name="temphp" id="temphp" type="number">
+                        </div>
+                    </div>
+                    <div class="hitdice" id="hitdice">
+                        <label for="hitdice">Hit Dice</label>
+                        <div class="hitdice">
+                            <input name="numdice" class="hitdice" type="number">
+                            <p>D</p><select class="hitdice" id="diesides">
+                                <option>D12</option>
+                                <option>D10</option>
+                                <option>D8</option>
+                                <option>D6</option>
+                            </select>
+                        </div>
+                        <div class="remaining" id="remaining">
+                            <label for="remaining"></label>
+                            <input name="remaining" class="remaining" type="number">
+                        </div>
+                    </div>
+                    <div class="deathsaves" id="deathsaves">
+                        <div>
+                            <div name="label">
+                                <label for="dathsaves">Death Saves</label>
+                            </div>
+                            <div class="marks" id="marks">
+                                <label for="success">Success</label>
+                                <input class="success" type="checkbox"><input class="success" type="checkbox"><input class="success" type="checkbox">
+                                <label for="failure">Failure</label>
+                                <input name="failure" type="checkbox"><input name="failure" type="checkbox"><input name="failure" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="attacksandspellcasting">
+                <div>
+                    <label for="attacksandspellcasting">Attacks & Spellcasting</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th class="atk-bonus" id="atk-bonus">Atk Bonus</th>
+                                <th>Damage/Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="atkname1"></td>
+                                <td><input type="text" name="atkname2"></td>
+                                <td><input type="text" name="atkname3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <textarea></textarea>
+                </div>
+            </section>
+
+            <section class="equipment">
+
             </section>
         </main>
     </form>
