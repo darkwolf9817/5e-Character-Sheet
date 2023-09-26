@@ -1,6 +1,6 @@
 * {
     -sheet-width: var(800px);
-    background-color: white;
+    -bg: var(white);
     -faded: var(#ddd);
     -faded-light: var(#eee);
     -faded-dark: var(#bbb);
@@ -204,3 +204,55 @@ label {
     font-size: 8px;
     font-weight: bold;
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    height: -attr-height;
+    width: -attr-width;
+    background-color: -bg;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: -radius;
+}
+
+input {
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+div.score {
+    input {
+        text-align: center;
+        font-size: 40px;
+        padding: 2px 0px 0px 0px;
+        background: -bg;
+    }
+
+    div.modifier [
+        margin-top: 3px;
+    ]
+
+    input {
+        background: -bg;
+        width: calc(-radius * 3);
+        height: calc(-radius * 2);
+        border: 1px inset black;
+        border-radius: calc(-radius * 2);
+        margin: -1px;
+        text-align: center;
+    }
+}
+
+div.attr-applications [
+    
+]
